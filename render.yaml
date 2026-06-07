@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tic-tac-toe-tournament
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+# NOTE: Render will auto-detect this file when you connect the GitHub repo.
+# Replace `name` if you prefer a different service name.

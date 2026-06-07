@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Tournament</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🏆 Tic Tac Toe Tournament</h1>
+            <nav class="nav">
+                <button class="nav-btn active" data-page="home">Home</button>
+                <button class="nav-btn" data-page="rankings">Rankings</button>
+                <button class="nav-btn" data-page="play">Play</button>
+            </nav>
+        </header>
+
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="welcome">
+                <h2>Welcome to the Tournament!</h2>
+                <p>Compete with other players in Tic Tac Toe and climb the rankings!</p>
+                <div class="home-buttons">
+                    <button class="btn btn-primary" id="startPlayBtn">Start Playing</button>
+                    <button class="btn btn-secondary" id="viewRankingsBtn">View Rankings</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rankings Page -->
+        <section id="rankings" class="page">
+            <div class="rankings-container">
+                <h2>Player Rankings</h2>
+                <div id="rankingsList" class="rankings-list">
+                    <p class="empty-message">No players yet. Start playing to be ranked!</p>
+                </div>
+                <button class="btn btn-secondary" id="backFromRankingsBtn">Back</button>
+            </div>
+        </section>
+
+        <!-- Play Page -->
+        <section id="play" class="page">
+            <div class="play-container">
+                <!-- Player Registration -->
+                <div id="playerRegistration" class="registration-form">
+                    <h2>Player Registration</h2>
+                    <div class="form-group">
+                        <label for="player1Name">Player 1 Name:</label>
+                        <input type="text" id="player1Name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="player1Age">Player 1 Age:</label>
+                        <input type="number" id="player1Age" placeholder="Enter age" min="1" max="120" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="player2Name">Player 2 Name:</label>
+                        <input type="text" id="player2Name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="player2Age">Player 2 Age:</label>
+                        <input type="number" id="player2Age" placeholder="Enter age" min="1" max="120" required>
+                    </div>
+
+                    <button class="btn btn-primary" id="startGameBtn">Start Game</button>
+                </div>
+
+                <!-- Game Board -->
+                <div id="gameBoard" class="game-section hidden">
+                    <div class="game-info">
+                        <div class="player-info">
+                            <span id="player1Info"></span>
+                            <span id="player1Symbol" class="symbol">X</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="player-info">
+                            <span id="player2Info"></span>
+                            <span id="player2Symbol" class="symbol">O</span>
+                        </div>
+                    </div>
+
+                    <div id="currentTurn" class="current-turn"></div>
+
+                    <div class="board" id="board">
+                        <div class="cell" data-index="0"></div>
+                        <div class="cell" data-index="1"></div>
+                        <div class="cell" data-index="2"></div>
+                        <div class="cell" data-index="3"></div>
+                        <div class="cell" data-index="4"></div>
+                        <div class="cell" data-index="5"></div>
+                        <div class="cell" data-index="6"></div>
+                        <div class="cell" data-index="7"></div>
+                        <div class="cell" data-index="8"></div>
+                    </div>
+
+                    <div id="gameStatus" class="game-status"></div>
+
+                    <div class="game-buttons">
+                        <button class="btn btn-primary" id="playAgainBtn" style="display:none;">Play Again</button>
+                        <button class="btn btn-secondary" id="endGameBtn">End Tournament</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

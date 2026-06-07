@@ -1,0 +1,16 @@
+{
+  "name": "tic-tac-toe-tournament",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe Tournament - static web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
