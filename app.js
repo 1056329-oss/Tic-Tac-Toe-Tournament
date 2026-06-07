@@ -19,7 +19,12 @@ class TicTacToeGame {
     initializeEventListeners() {
         // Navigation
         document.querySelectorAll('.nav-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => this.switchPage(e.target.dataset.page));
+            btn.addEventListener('click', (e) => {
+                if (e.target.dataset.page) {
+                    this.switchPage(e.target.dataset.page);
+                }
+                // About link will navigate naturally via href
+            });
         });
 
         // Home page buttons
