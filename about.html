@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Tic Tac Toe Tournament</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .about-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .student-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .student-info h3 {
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .info-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 100px;
+        }
+        .interests {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .interests h4 {
+            margin-top: 0;
+            color: #333;
+        }
+        .interests ul {
+            list-style: none;
+            padding: 0;
+        }
+        .interests li {
+            padding: 8px 0;
+            color: #555;
+        }
+        .interests li:before {
+            content: "🎮 ";
+            margin-right: 10px;
+        }
+        .interests li:nth-child(1):before { content: "🚴 "; }
+        .interests li:nth-child(2):before { content: "🎮 "; }
+        .interests li:nth-child(3):before { content: "🎬 "; }
+        .back-btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🏆 Tic Tac Toe Tournament</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="index.html" class="nav-btn" onclick="location.hash='rankings'">Rankings</a>
+                <a href="index.html" class="nav-btn" onclick="location.hash='play'">Play</a>
+                <a href="about.html" class="nav-btn active">About</a>
+            </nav>
+        </header>
+
+        <div class="about-container">
+            <h2>About This Project</h2>
+            
+            <div class="student-info">
+                <h3>Creator Information</h3>
+                <div class="info-item">
+                    <span class="info-label">Name:</span>
+                    Xavier Morgan Drummond
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Age:</span>
+                    14 years old
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    Student Developer
+                </div>
+            </div>
+
+            <div class="interests">
+                <h4>Interests & Hobbies</h4>
+                <ul>
+                    <li>Riding eBikes</li>
+                    <li>Playing Roblox</li>
+                    <li>Watching Movies</li>
+                </ul>
+            </div>
+
+            <div style="background: #fff; padding: 20px; border-radius: 8px; margin-top: 20px; border-left: 4px solid #667eea;">
+                <h4 style="margin-top: 0; color: #333;">Project Description</h4>
+                <p>This Tic Tac Toe Tournament is an interactive web application built to showcase skills in web development. The app features player registration, a dynamic ranking system, and persistent game statistics using browser storage.</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Player management and profile tracking</li>
+                    <li>Real-time ranking leaderboard</li>
+                    <li>Statistics tracking (wins, losses, draws)</li>
+                    <li>Classic Tic Tac Toe gameplay</li>
+                </ul>
+            </div>
+
+            <div class="back-btn">
+                <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

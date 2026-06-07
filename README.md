@@ -2,6 +2,10 @@
 
 A fun and interactive tic-tac-toe tournament web application where players compete, get ranked, and track their statistics!
 
+## 🌐 Live Demo
+
+**Play Online:** https://tic-tac-toe-tournament-t79d.onrender.com/
+
 ## Features
 
 ✨ **Player Management**
@@ -87,6 +91,13 @@ Works on all modern browsers:
 2. Player age is recorded for reference
 3. Win rate shows your skill level
 4. Play with friends and compete for the top spot!
+
+## About the Creator
+
+**Xavier Morgan Drummond**
+- Age: 14 years old
+- Interests: Riding eBikes, playing Roblox, watching movies
+- Learn more: Visit the [About Page](about.html)
 
 ---
 
